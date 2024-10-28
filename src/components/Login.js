@@ -76,7 +76,6 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
-        
         })
         .catch((error) => {
           const errorCode = error.code;
@@ -85,7 +84,7 @@ const Login = () => {
         });
     }
   };
-                                        
+
   const toggleSignInForm = () => {
     setIsSignInForm(!isSignInForm);
   };
@@ -94,14 +93,15 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute">
-        <img className="w-screen object-cover"
+        <img
+          className="h-screen object-cover md: w-screen"
           src={BG_URL}
           alt="logo1"
         />
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="w-full md:w-3/12 absolute p-12 bg-black bg-opacity-90 my-36 mx-auto right-0 left-0 text-white rounded-lg"
+        className="w-80 md:w-96 lg:w-3/12 absolute p-12 bg-black bg-opacity-90 my-36 mx-auto right-0 left-0 text-white rounded-lg"
       >
         <h1 className="font-semibold text-3xl py-4">
           {isSignInForm ? "Sign In" : "Sign Up"}
@@ -144,6 +144,3 @@ const Login = () => {
 };
 
 export default Login;
-
-
-
