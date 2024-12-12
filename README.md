@@ -1,4 +1,4 @@
-# NETFLIX GPT -
+# NETBOT GPT -
  - Create React App
  - Configured TailwindCSS
  - Header
