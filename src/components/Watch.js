@@ -5,6 +5,7 @@ import { API_OPTIONS, LOGO } from "../utils/constants";
 import { useParams } from "react-router-dom";
 import { addTrailerVideo } from "../utils/moviesSlice";
 import MovieList from "./MovieList";
+import photo from "../assets/image.png";
 
 const Watch = () => {
   const dispatch = useDispatch();
@@ -59,7 +60,7 @@ const Watch = () => {
       {/* Navbar styling */}
       <div className="absolute top-0 left-0 w-full z-50 bg-gradient-to-b from-black to-transparent px-6 py-3 md:px-8 md:py-4 flex justify-between items-center">
         <a href="/browse" className="text-white">
-          <img className="w-36 md:w-48" src={LOGO} alt="logo" />
+          <img className="w-36 md:w-48" src={photo} alt="logo" />
         </a>
       </div>
 

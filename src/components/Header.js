@@ -7,6 +7,7 @@ import { addUser, removeUser } from "../utils/userSlice";
 import { LOGO, Supported_Languages } from "../utils/constants";
 import { toggleGptSearchView } from "../utils/gptSlice";
 import { changeLanguage } from "../utils/configSlice";
+import photo from "../assets/image.png";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -55,7 +56,7 @@ const Header = () => {
 
   return (
     <div className="absolute w-full px-4 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row items-center justify-between">
-      <img className="w-36 mb-0 md:w-44 md:mb-0" src={LOGO} alt="logo" />
+      <img className="w-36 mb-0 md:w-44 md:mb-0" src={photo} alt="logo" />
       {user && (
         <div className="w-full flex flex-row items-center justify-between md:justify-end md:space-x-4">
           {showGptSearch && (
